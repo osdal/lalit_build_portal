@@ -1,8 +1,63 @@
 //====================================================================================================
-.top-bar {
-	height: rem(38);
-	background-image: url('img/top_bar.jpg');
+header {
+    
+
+    .top-bar {
+        height: rem(38);
+        background-image: url('img/top_bar.jpg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(20);
+
+        h2 {
+            font-size: rem(20);
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+    }
+
+    .top-menu-bar {
+		border-bottom: rem(0.3) solid #8C8C8C;
+        &__container {
+            display: flex;
+            height: rem(45);
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .quantity-goods {
+			font-size: rem(12);
+			color: #3B3A3D;
+		}
+		
+        .top-menu {
+			display: flex;
+			gap: rem(20);
+			font-size: rem(12);
+			font-weight: 600;
+			.active {}
+        }
+		
+		
+        .lang-switcher {
+			gap: rem(20);
+			font-weight: 600;
+			display: flex;
+		}
+		
+        .entry-block {
+			display: flex;
+			gap: rem(20);
+			font-weight: 600;
+		}
+    }
 }
+
+
+
+
 //====================================================================================================
 
 //Burger
