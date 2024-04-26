@@ -14,14 +14,17 @@
         }
         .to-read {
             color: #1060C1;
+            margin-bottom: rem(20);
         }
         .logos-block {
             display: flex;
             justify-content: space-around;
+            align-items: center;
             margin-bottom: rem(70);
+            min-height: rem(25);
             img {
-                // height: auto;
-                width: auto;
+                height: 100%;
+                // width: auto;
             }
         }
     }
