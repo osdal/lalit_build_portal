@@ -7,7 +7,7 @@ const buildFolder = `./dist`;
 const srcFolder = `./src`;
 
 // Шляхи до папок та файлів проекту
-export const path = {
+export const pathtofiles = {
 	build: {
 		html: `${buildFolder}/`,
 		js: `${buildFolder}/js/`,
@@ -31,7 +31,10 @@ export const path = {
 	buildFolder: buildFolder,
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
-	ftp: `` // Шлях до потрібної папки на віддаленому сервері. gulp додасть ім'я папки проекту автоматично
+	// Шлях до потрібної папки на віддаленому сервері.
+	ftp: ``
+	// Приклад: завантажити в папку 2022 далі в папку з назвою проєкту
+	// ftp: `2022/${rootFolder}`
 };
 
 // Налаштування FTP з'єднання

@@ -1,3 +1,30 @@
 //====================================================================================================
+.footer {
+    &__container {
+        .slogan {
+            font-size: rem(16);
+            font-weight: 600;
+            margin-bottom: rem(40);
+        }
+        .invitation {
+            font-family: Roboto;
+            font-size: rem(14);
+            font-weight: 400;
+            margin-bottom: rem(70);
+        }
+        .to-read {
+            color: #1060C1;
+        }
+        .logos-block {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: rem(70);
+            img {
+                // height: auto;
+                width: auto;
+            }
+        }
+    }
+}
 
 //====================================================================================================
