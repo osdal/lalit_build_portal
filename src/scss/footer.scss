@@ -6,25 +6,37 @@
             font-weight: 600;
             margin-bottom: rem(40);
         }
+
         .invitation {
             font-family: Roboto;
             font-size: rem(14);
             font-weight: 400;
             margin-bottom: rem(70);
         }
+
         .to-read {
             color: #1060C1;
             margin-bottom: rem(20);
         }
+
         .logos-block {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin-bottom: rem(70);
             min-height: rem(25);
+
             img {
                 height: 100%;
                 // width: auto;
+            }
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .subscription {
+                grid-column: span 2;
             }
         }
     }
