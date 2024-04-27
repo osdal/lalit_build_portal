@@ -34,7 +34,11 @@
 
         .info {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(5, 1fr);
+            .name {
+                font-size: rem(48);
+                font-weight: 700;
+            }
             .subscription {
                 grid-column: span 2;
             }
