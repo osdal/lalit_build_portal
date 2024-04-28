@@ -33,16 +33,49 @@
         }
 
         .info {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            .name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col-1,
+        .col-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name {
+            h2 {
                 font-size: rem(48);
                 font-weight: 700;
             }
-            .subscription {
-                grid-column: span 2;
+
+            font-size: rem(12);
+        }
+
+        .col-2 {
+            .connect {
+                display: flex;
+                font-weight: 600;
             }
         }
+
+        .subscription {}
+
+        .social {}
+
+        .content,
+        .social {
+            display: flex;
+        }
+
+        .about-company {}
+
+        .to-customers {}
+
+        .useful-info {}
+
+        .help {}
+
     }
 }
 
