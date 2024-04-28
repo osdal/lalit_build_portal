@@ -52,20 +52,70 @@
             font-size: rem(12);
         }
 
+        .col-1 {
+            flex-grow: 1;
+        }
+
         .col-2 {
+            flex-grow: 3;
+
             .connect {
                 display: flex;
-                font-weight: 600;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 700;
+                font-size: rem(18);
+                margin-bottom: rem(30);
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: rem(20);
+
+                div {
+                    display: flex;
+                    gap: rem(5);
+                }
+            }
+
+            .subscription {
+                input {
+                    border: 2px solid #ccc;
+                    border-radius: rem(10);
+                    padding: rem(10) rem(20);
+                    outline: none;
+                    /* убираем стандартную обводку */
+                }
+
+                input::placeholder {
+                    color: #000;
+                }
+
+                button {
+                    background-color: hsl(0, 0%, 50%);
+                    border: 2px solid hsl(0, 0%, 50%);
+                    border-radius: rem(10);
+                    padding: rem(10) rem(40);
+                    color: #fff;
+                }
             }
         }
 
-        .subscription {}
 
-        .social {}
 
         .content,
         .social {
             display: flex;
+            gap: rem(100);
+        }
+
+        .content {
+            .heading {
+                font-family: Roboto;
+                font-size: rem(14);
+                font-weight: 700;
+            }
         }
 
         .about-company {}
