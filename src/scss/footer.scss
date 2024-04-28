@@ -111,6 +111,13 @@
         }
 
         .content {
+            &>div {
+                display: flex;
+                flex-direction: column;
+                gap: rem(20);
+                font-weight: 600;
+            }
+
             .heading {
                 font-family: Roboto;
                 font-size: rem(14);
