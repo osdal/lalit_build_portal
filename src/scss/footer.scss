@@ -3,8 +3,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
         .slogan {
             font-size: rem(16);
             font-weight: 600;
@@ -25,7 +24,7 @@
 
         .logos-block {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             margin-bottom: rem(70);
             min-height: rem(25);
@@ -64,7 +63,7 @@
             flex-grow: 1;
             gap: rem(10);
 
-            .help-phone{
+            .help-phone {
                 font-weight: 600;
                 font-size: rem(18);
             }
@@ -139,14 +138,10 @@
 
         }
 
-        .about-company {}
-
-        .to-customers {}
-
-        .useful-info {}
-
-        .help {}
-
+        .copyright {
+            align-self: center;
+            font-weight: 600;
+        }
     }
 }
 
