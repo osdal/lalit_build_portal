@@ -5,7 +5,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: rem(140);
 
             .search {
                 width: rem(100);
@@ -17,7 +16,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-			align-items: center;
+            align-items: center;
+            margin-bottom: rem(50);
 
             h1 {
                 font-size: rem(48);
@@ -26,32 +26,43 @@
 
             h2 {
                 font-size: rem(11);
-				font-weight: 500;
+                font-weight: 500;
             }
         }
 
-		.favorites-block{
-			display: flex;
-			align-items: center;
-		}
-		.main-menu{
-			ul{
-				display: flex;
-				gap: rem(70);
-				a {
-					font-size: rem(16);
-				}
-			}
-		}
+        .favorites-block {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-menu {
+            ul {
+                display: flex;
+                gap: rem(70);
+
+                a {
+                    font-size: rem(16);
+                    font-weight: 600;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #FE212A;
+                    }
+                }
+            }
+        }
     }
 
     .top-bar {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: rem(20);
+        }
+
         height: rem(38);
         background-image: url('@img/top_bar.png');
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: rem(20);
 
         h2 {
             font-size: rem(20);
@@ -63,13 +74,13 @@
 
     .top-menu-bar {
         border-bottom: rem(0.3) solid #8C8C8C;
+        margin-bottom: rem(50);
 
         &__container {
             position: relative;
             display: flex;
             height: rem(45);
             justify-content: space-between;
-            // justify-content: center1;
             align-items: center;
         }
 
@@ -85,8 +96,16 @@
             font-weight: 600;
             justify-content: center;
             align-items: center;
+            transition: all 0.3s;
+
+            a:hover {
+                color: #FE212A;
+            }
 
             .active {
+                a:hover {
+                    color:#fff;
+                }
                 background-color: #FE212A;
                 padding: rem(5) rem(10);
                 border-radius: rem(5);

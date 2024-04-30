@@ -48,6 +48,10 @@
             flex-direction: column;
         }
 
+        .col-1 {
+            gap: rem(50);
+        }
+
         .name {
             margin-bottom: rem(20);
 
@@ -61,7 +65,7 @@
 
         .col-1 {
             flex-grow: 1;
-            gap: rem(10);
+            gap: rem(20);
 
             .help-phone {
                 font-weight: 600;
@@ -93,12 +97,12 @@
             }
 
             .subscription {
+                align-self: start;
                 input {
                     border: 2px solid #ccc;
                     border-radius: rem(10);
                     padding: rem(10) rem(20);
                     outline: none;
-                    /* убираем стандартную обводку */
                 }
 
                 input::placeholder {
