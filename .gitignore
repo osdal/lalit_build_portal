@@ -9,3 +9,4 @@ version.json
 **/*.rar
 package-lock.json
 undefined
+build_market_dist/
